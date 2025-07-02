@@ -1,0 +1,62 @@
+button.likeButton::before {
+  background-color: white; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+button.likeButtonselected {
+  background-color: green;
+  color: white;
+}
+
+button.dislikeButton::before {
+  background-color: white; /* Red */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+button.dislikeButtonselected {
+  background-color: red;
+  color: white;
+}
+
+@media (max-width: 700px) {
+  button.likeButton {
+    display: flex;
+    position: absolute;
+    top: 0px;
+  }
+
+  button.likeButtonselected {
+    background-color: green;
+    color: white;
+    display: flex;
+    position: absolute;
+    top: 0px;
+  }
+  button.dislikeButton {
+    display: flex;
+    position: absolute;
+    top: 46px;
+  }
+  button.dislikeButtonselected {
+    background-color: red;
+    color: white;
+    display: flex;
+    position: absolute;
+    top: 46px;
+  }
+}
